@@ -165,6 +165,21 @@
     .hero h1 .word{opacity:1;transform:none;animation:none}
   }
 
+  /* PROJECTS */
+  .proj-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:22px}
+  .yt-wrap{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#000;position:relative;aspect-ratio:16/9}
+  .yt-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .ig-col{display:flex;flex-direction:column;gap:22px}
+  .ig-card{display:flex;align-items:center;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px;transition:transform .25s,box-shadow .25s;flex:1}
+  .ig-card:hover{transform:translateY(-4px);box-shadow:0 18px 36px rgba(20,19,15,.08)}
+  .ig-thumb{width:62px;height:62px;border-radius:16px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#FEDA77,#F58529 35%,#DD2A7B 65%,#8134AF);color:#fff}
+  .ig-thumb svg{width:30px;height:30px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .ig-meta .t{font-weight:700;font-size:17px;letter-spacing:-.01em}
+  .ig-meta .s{color:var(--muted);font-weight:500;font-size:14px;margin-top:3px}
+  .ig-meta .go{color:var(--accent);font-weight:600;font-size:13.5px;margin-top:9px;display:inline-flex;align-items:center;gap:5px}
+  .ig-meta .go svg{width:14px;height:14px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  @media(max-width:860px){.proj-grid{grid-template-columns:1fr}}
+
   /* mobile side padding */
   @media(max-width:600px){
     .wrap{padding-left:24px;padding-right:24px}
@@ -195,6 +210,7 @@
     <div class="nav-links">
       <a href="#about">Обо мне</a>
       <a href="#experience">Опыт</a>
+      <a href="#projects">Проекты</a>
       <a href="#skills">Навыки</a>
       <a href="#education">Образование</a>
     </div>
@@ -359,6 +375,45 @@
       </div>
     </div>
 
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="block wrap" id="projects">
+  <div class="sec-head reveal">
+    <div class="sec-kicker">Портфолио</div>
+    <div class="sec-title">Проекты в <em>действии</em></div>
+  </div>
+  <div class="proj-grid">
+    <div class="yt-wrap reveal">
+      <iframe src="https://www.youtube-nocookie.com/embed/GUXjDhyHCOU" title="jinalike.fest" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="ig-col">
+      <a class="ig-card reveal" href="https://www.instagram.com/reel/DLFxKP8scrI/" target="_blank" rel="noopener">
+        <div class="ig-thumb"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></div>
+        <div class="ig-meta">
+          <div class="t">jinalike.fest — промо-ролик</div>
+          <div class="s">Reels · промо-кампания фестиваля</div>
+          <div class="go">Смотреть в Instagram <svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></div>
+        </div>
+      </a>
+      <a class="ig-card reveal" href="https://www.instagram.com/reel/DLk2_B9NMyl/" target="_blank" rel="noopener">
+        <div class="ig-thumb"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></div>
+        <div class="ig-meta">
+          <div class="t">jinalike.fest — отчётный ролик</div>
+          <div class="s">Reels · итоги события</div>
+          <div class="go">Смотреть в Instagram <svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></div>
+        </div>
+      </a>
+      <a class="ig-card reveal" href="https://www.instagram.com/p/DL4qoY1oqrS/" target="_blank" rel="noopener">
+        <div class="ig-thumb"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></div>
+        <div class="ig-meta">
+          <div class="t">4bricks.forum — отчёт</div>
+          <div class="s">Фотоотчёт с форума</div>
+          <div class="go">Смотреть в Instagram <svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></div>
+        </div>
+      </a>
+    </div>
   </div>
 </section>
 
